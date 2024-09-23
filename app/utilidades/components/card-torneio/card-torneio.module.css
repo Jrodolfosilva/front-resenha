@@ -1,0 +1,13 @@
+.container_cardTorneio{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, 0.182);
+    padding: 1.2rem;
+box-shadow: 1px 1px 6px red;
+}
+
+.container_cardTorneio h2, .container_cardTorneio p{
+    font-size: 14px;
+
+}

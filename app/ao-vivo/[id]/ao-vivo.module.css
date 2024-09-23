@@ -1,0 +1,59 @@
+.container{
+    padding: 9rem 6rem;
+}
+
+
+.container h1{
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.container .content{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    background-color: #191717;
+    padding: 3rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    color: #fff;
+   
+}
+
+.card p, .card a{
+    font-size: 1.6rem;
+    
+}
+
+
+.card a{
+    
+    color: #fcf340;
+}
+
+
+
+
+
+@media (max-width:768px) {
+    .container{
+        padding: 6rem 1.2rem;
+    }
+
+    .container h1{
+        text-align: center;
+    }
+
+    .card{
+        margin: 0 auto;
+    }
+}

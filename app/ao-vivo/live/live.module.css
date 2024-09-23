@@ -1,0 +1,46 @@
+.container{
+    padding:6rem;
+    text-align: center;
+    color: #fff;
+}
+
+.container section iframe{
+    width: 80%;
+    min-height: 80vh;
+}
+
+
+
+.content_placar{
+    width: fit-content;
+    padding: 3rem;
+    background-color: rgb(20, 19, 19);
+    font-size: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 auto;
+}
+
+
+.content_placar .equipes{
+    background-color: #fcf340;
+    padding:1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+@media (max-width:768px) {
+    .container{
+        padding: 3rem 1rem;
+    }
+
+
+
+    .container section iframe{
+        position: relative;
+        z-index: 9;
+        width: 100%;
+    }
+}

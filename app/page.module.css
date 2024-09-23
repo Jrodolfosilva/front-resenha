@@ -1,0 +1,63 @@
+.container{
+    
+    color: #fff;
+}
+
+.container h1{
+    padding-top: 9rem;
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.container h1 b{
+    color:#fcf340;
+}
+
+.container section{
+   
+    padding: 9rem 6rem;
+
+
+    display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 3rem;
+ 
+}
+
+.container section a{
+    display: block;
+    width: fit-content;
+    margin:  0 auto;
+    text-decoration: none;
+    
+
+
+}
+
+.container section a img{
+    border-radius: 0.8rem;
+    border: 0.1rem solid #3f3d07;
+    
+}
+
+
+
+.container section a h2{
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 1.6rem 0;
+    
+}
+
+
+
+@media (max-width:768px) {
+    
+    .container section{
+        flex-direction: column;
+    
+     
+    }
+
+
+}

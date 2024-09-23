@@ -1,0 +1,79 @@
+.main{
+  
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.2rem;
+  background-image: url("/bgbancada.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+
+.container_login{
+  background-color:rgb(2 2 2 / 52%);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 100%;
+  border-radius: 4px;
+ 
+}
+
+.container_login form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:6rem 3.2rem;
+  gap: 2.4rem;
+}
+
+
+.container_login form label, 
+.container_login form label input,
+.container_login form input{
+  width: 100%;
+}
+
+.container_login form input{
+ padding: 1.2rem 2.4rem;
+ border: none;
+ outline: none;
+ border-radius: 0.2rem;
+ font-size: 1.6rem;
+ width: 100%;
+ 
+}
+
+.container_login form input[type="submit"]{
+  background-color: var(--color-yellow);
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  
+
+}
+
+.container_login form input[type="submit"]:hover{
+  background-color: #fcf340;
+ 
+}
+
+
+@media (min-width:420px) {
+  
+  .container_login{
+    max-width: 40rem;
+   
+  }
+  .container_login form{
+    width: 100%;
+  }
+
+
+}

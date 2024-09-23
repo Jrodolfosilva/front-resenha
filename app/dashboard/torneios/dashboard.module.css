@@ -1,0 +1,197 @@
+.container{
+    padding: 9rem;
+}
+
+
+.container .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+.container .caminho{
+    display: flex;
+    align-items: center;
+    
+    gap: 1rem;
+}
+
+/*
+.container .header .search input{
+    background-color: #fff;
+    padding: 14px 32px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    font-size: 1.6rem;
+}
+
+.search input:focus{
+    border: 1px solid red;
+}*/
+
+.container h1{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 1rem;
+    border-left: 0.1rem solid #dfdfdf;
+    color: #fff;
+}
+
+.container_torneio {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    gap: 3rem;
+  }
+  
+
+
+.container_torneio .torneio{
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    box-shadow: 1px 1px 4px #361313;
+    border-radius: 0.8rem;
+    padding: 3rem;
+    border: 1px solid #393601;
+    background: #ffffff;
+    color: #000000;
+ 
+
+}
+
+
+
+
+.container_torneio .torneio div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+
+}
+
+
+.container_torneio .torneio div h4{
+    font-size: 1.6rem;
+}
+
+
+
+.container_torneio .torneio div p{
+    font-size: 1.4rem;
+}
+
+.container_torneio button, .container_torneio a{
+    display: flex!important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.container_torneio .torneio .action{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1.6rem;
+    align-items: center;
+    
+  
+}
+
+.action a,  .action button{
+    display: block;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+
+
+
+/***/
+
+
+.container dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+
+.container dialog {
+    height: 40rem;
+    min-width: 32rem;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3rem;
+    border:1px solid #dfdfdf;
+    word-break: break-all;
+}
+
+.container dialog h2{
+    border: none;
+}
+
+
+.container dialog section{
+    overflow-y: scroll;
+    height: 30rem;
+}
+
+.container dialog div{
+    
+    margin-top: 2rem;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.container dialog div p{
+    font-size: 12px;
+    line-height: 14px;
+}
+
+
+
+
+@media (max-width:450px){
+
+    .container .header{
+        
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container{
+      padding: 0rem;
+      max-width: 100%;
+    }
+
+    .container_torneio{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0;
+        max-width: 100%;
+        align-items: center;
+      }
+
+      .container .torneio{
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: fit-content;
+      }
+
+      .container .torneio .action{
+        justify-content: flex-start;
+      }
+
+  }
